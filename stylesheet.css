@@ -364,9 +364,19 @@ img {
 
 .img-responsive {
     display: block;
+    position: relative;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
+
+/* .main-img{
+    display: block;
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    margin-left: 350px;
+    margin-right: 350px;
+} */
 
 .img-rounded {
     border-radius: 6px
