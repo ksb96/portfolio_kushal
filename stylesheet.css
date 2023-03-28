@@ -222,6 +222,9 @@ th {
     padding: 0
 }
 
+.work-experience .spacing{
+    margin: 0 10px;
+}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
 
