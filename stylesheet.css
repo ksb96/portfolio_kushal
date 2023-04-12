@@ -189,7 +189,7 @@ input[type=search]::-webkit-search-decoration {
     -webkit-appearance: none
 }
 
-.smaller-desc{
+.smaller-desc {
     font-size: 87%;
     font-weight: 100;
     font-style: normal;
@@ -222,9 +222,10 @@ th {
     padding: 0
 }
 
-.work-experience .spacing{
+.work-experience .spacing {
     margin: 0 10px;
 }
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
 
@@ -5673,12 +5674,17 @@ button.close {
 }
 
 body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 2, 36, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* body {
     background-image: -webkit-linear-gradient(top, #ff0060, #ff6975);
     background-image: -o-linear-gradient(top, #ff0060 0, #ff6975 100%);
     background-image: linear-gradient(180deg, #ff0060 0, #ff6975);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFF0060", endColorstr="#FFFF6975", GradientType=0)
-}
+} */
 
 body.white {
     background-color: #fff;
@@ -5788,12 +5794,18 @@ body.white {
 
 .btn-primary,
 .btn-primary:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 2, 36, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* .btn-primary,
+.btn-primary:hover {
     background-image: -webkit-linear-gradient(left, #ff6975, #ff0060);
     background-image: -o-linear-gradient(left, #ff6975 0, #ff0060 100%);
     background-image: linear-gradient(90deg, #ff6975 0, #ff0060);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFF6975", endColorstr="#FFFF0060", GradientType=1)
-}
+} */
 
 .btn-primary:hover {
     background-position: 50%
@@ -5869,7 +5881,6 @@ h5 a {
 
 .h5 a:hover,
 h5 a:hover {
-    color: #ff0060;
     text-decoration: none
 }
 
@@ -5887,9 +5898,7 @@ h5 small {
 }
 
 .social-round-icon:hover {
-    background-color: #ff0060;
     color: #fff;
-    border-color: #ff0060
 }
 
 .social-round-icon.white-round-icon {
@@ -5899,7 +5908,6 @@ h5 small {
 
 .social-round-icon.white-round-icon:hover {
     background-color: #fff;
-    color: #ff0060;
     border-color: #fff
 }
 
@@ -5932,14 +5940,14 @@ h5 small {
 }
 
 .social-buttons a:hover {
-    color: #ff0060;
     text-decoration: none
 }
 
 .social-buttons a:hover .social-round-icon {
-    background-color: #ff0060;
+    background: rgb(2,0,36);
+    border-color: #090909;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,36,1) 100%, rgba(0,212,255,1) 100%);
     color: #fff;
-    border-color: #ff0060
 }
 
 .carousel-caption {
