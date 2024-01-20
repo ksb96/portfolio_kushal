@@ -22,15 +22,18 @@
   <link href="./stylesheet.css" rel="stylesheet">
 </head>
 
+<!-- Up btn -->
+<a id="button"></a>
+
 <body class="">
 
   <!-- header content -->
   <div class="background-color-layer" style="background-image: url('assets/images/img-01.jpg')"></div>
   <main class="content-wrapper">
     <header class="white-text-container section-container">
-      <div class="text-center">
-        <h1>I am Kushal Bhowmick</h1>
-        <p>Software Developer</p>
+      <div class="text-center" style="padding-left: 50px;">
+        <h1 style="padding-left: 50px;">I am Kushal Bhowmick</h1>
+        <p>Fullstack Developer</p>
         <p>
           <a class="fa-icon fa-icon-2x" href="https://github.com/ksb96" target="_blank" title="github">
             <i class="fa fa-github"></i>
@@ -278,6 +281,29 @@
     </div>
   </footer>
 
+
+  <!-- scripts --start -->
+
+  <!-- Up btn script -->
+  <script>
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+
+  </script>
+
+  <!-- map load script -->
   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
       scrollRevelation('.card');
@@ -308,6 +334,7 @@
     }
     initMap();
   </script>
+  <!-- scripts --end -->
 </body>
 
 </html>
